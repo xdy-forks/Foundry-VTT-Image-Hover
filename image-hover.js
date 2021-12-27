@@ -282,7 +282,7 @@ Hooks.on('hoverToken', (token, hovered) => {
 		return;
 	}
 
-	if (!game.keybindings.bindings.get("image-hover.userKeybindButton")[0].key) {
+	if (!game?.keybindings?.bindings?.get("image-hover.userKeybindButton")[0]?.key) {
 		canvas.hud.imageHover.showArtworkRequirements(token, hovered)
 	}
 });
